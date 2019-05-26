@@ -1,0 +1,7 @@
+32bit
+bjam --build-dir=../boost_tmp variant=debug threading=multi address-model=32 link=shared runtime-link=shared toolset=msvc stage
+bjam --build-dir=../boost_tmp variant=debug threading=multi address-model=32 link=shared runtime-link=shared --with-iostreams -s ZLIB_SOURCE=d:\ext\build\zlib-1.2.5 toolset=msvc stage
+
+64bit
+bjam --build-dir=../boost_tmp variant=debug threading=multi address-model=64 link=shared runtime-link=shared toolset=msvc stage64
+bjam --build-dir=../boost_tmp variant=debug threading=multi address-model=64 link=shared runtime-link=shared --with-iostreams -s ZLIB_SOURCE=d:\ext\build\zlib-1.2.5 toolset=msvc stage64
